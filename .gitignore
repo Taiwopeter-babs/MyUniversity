@@ -1,0 +1,7 @@
+*.sln
+Properties/
+.vscode/
+bin/
+appsettings*.json
+*.db
+obj/
