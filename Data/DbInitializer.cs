@@ -29,8 +29,7 @@ public static class DbInitializer
             alexander, alonso, anand, barzdukas, li, justice, norman, olivetto
         };
 
-        context.Students.AddRange(students);
-        context.SaveChanges();
+        context.AddRange(students);
 
         var abercrombie = new Instructor
         {
