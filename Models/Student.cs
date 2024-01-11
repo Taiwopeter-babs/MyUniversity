@@ -23,7 +23,13 @@ public class Student
     public DateTime EnrollmentDate { get; set; }
 
     [Display(Name = "Full Name")]
-    public string FullName { get => LastName + " " + FullName; }
+    public string FullName
+    {
+        get
+        {
+            return FirstName + " " + LastName;
+        }
+    }
 
     public ICollection<Enrollment> Enrollments { get; set; }
 }
